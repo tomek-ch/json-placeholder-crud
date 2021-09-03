@@ -6,8 +6,8 @@
 
 .postsList a {
   display: block;
-  background-color: $foreground;
   padding: 2em;
-  margin: 1em 0;
+  margin: 2em 0;
   border-radius: $border-radius;
+  box-shadow: $shadow;
 }
