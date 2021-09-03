@@ -6,4 +6,13 @@
   margin: 2em 0;
   border-radius: $border-radius;
   box-shadow: $shadow;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  align-items: center;
+}
+
+.postItem > div {
+  display: flex;
+  gap: 1em;
 }

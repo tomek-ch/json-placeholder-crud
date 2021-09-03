@@ -1,0 +1,12 @@
+@import "../mixins";
+@import "../variables";
+
+.btnDanger {
+  @include btn;
+  background-color: $danger;
+  color: white;
+}
+
+.btnDanger:disabled {
+  background-color: $danger-light;
+}
