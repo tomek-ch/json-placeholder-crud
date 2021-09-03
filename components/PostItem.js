@@ -28,7 +28,7 @@ export default function PostItem({ title, id, setPosts }) {
         <Link href={`/posts/${id}`}>{title}</Link>
         <div>
           <button onClick={remove}>Delete</button>
-          <Link href={`/posts/${id}/update`}>Update</Link>
+          <Link href={`/posts/${id}/edit`}>Update</Link>
         </div>
       </div>
       <div>{error}</div>
