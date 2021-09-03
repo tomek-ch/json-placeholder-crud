@@ -1,0 +1,11 @@
+.postsList {
+  list-style-type: none;
+}
+
+.postsList a {
+  display: block;
+  background-color: lightgray;
+  padding: 2em;
+  margin: 1em 0;
+  border-radius: 10px;
+}
