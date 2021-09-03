@@ -1,5 +1,7 @@
 ## {JSON} Placeholder CRUD
 
+See the [live website](https://json-placeholder-crud.vercel.app/)
+
 **Quick note**: The resources aren't actually updated on the server so you can't see the effects of create and update.
 
 ### Installation
