@@ -20,6 +20,7 @@ export default function New() {
           value={title}
           onChange={({ target: { value } }) => setTitle(value)}
           className={input}
+          autoFocus
         />
       </label>
       <label>
