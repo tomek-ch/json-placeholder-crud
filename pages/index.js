@@ -1,4 +1,4 @@
-import { postsList } from "../styles/PostsList.module.scss";
+import { postsList } from "../styles/components/PostsList.module.scss";
 import Link from "next/link";
 
 export default function Home({ posts, error }) {

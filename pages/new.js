@@ -1,7 +1,7 @@
 import { useState } from "react";
 import TextBox from "../components/TextBox";
-import { input } from "../styles/Input.module.scss";
-import { form } from "../styles/Form.module.scss";
+import { input } from "../styles/components/Input.module.scss";
+import { form } from "../styles/components/Form.module.scss";
 
 export default function New() {
   const [title, setTitle] = useState("");
