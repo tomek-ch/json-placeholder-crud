@@ -1,10 +1,12 @@
+@import "variables";
+
 .postsList {
   list-style-type: none;
 }
 
 .postsList a {
   display: block;
-  background-color: lightgray;
+  background-color: $foreground;
   padding: 2em;
   margin: 1em 0;
   border-radius: 10px;
