@@ -2,6 +2,7 @@ import { useState } from "react";
 import TextBox from "../components/TextBox";
 import { input } from "../styles/components/Input.module.scss";
 import { form } from "../styles/components/Form.module.scss";
+import { btn } from "../styles/components/BtnPrimary.module.scss";
 
 export default function New() {
   const [title, setTitle] = useState("");
@@ -31,7 +32,7 @@ export default function New() {
           className={input}
         />
       </label>
-      <button disabled={!title || !body} title={error}>
+      <button disabled={!title || !body} title={error} className={btn}>
         Add post
       </button>
     </form>
