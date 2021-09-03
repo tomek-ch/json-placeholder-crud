@@ -1,14 +1,17 @@
+import { useState } from "react";
 import PostItem from "../components/PostItem";
 
 export default function Home({ posts, error }) {
+  const [currentPosts, setPosts] = useState(posts);
+
   if (error) {
     return <h1>{error}</h1>;
   }
 
   return (
     <>
-      {posts.map((post) => (
-        <PostItem key={post.id} {...post} />
+      {currentPosts.map((post) => (
+        <PostItem key={post.id} {...post} setPosts={setPosts} />
       ))}
     </>
   );
