@@ -1,10 +1,6 @@
 @import "../variables";
 
-.postsList {
-  list-style-type: none;
-}
-
-.postsList a {
+.postItem {
   display: block;
   padding: 2em;
   margin: 2em 0;

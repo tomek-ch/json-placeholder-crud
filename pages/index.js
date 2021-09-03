@@ -1,5 +1,4 @@
-import { postsList } from "../styles/components/PostsList.module.scss";
-import Link from "next/link";
+import PostItem from "../components/PostItem";
 
 export default function Home({ posts, error }) {
   if (error) {
@@ -7,13 +6,11 @@ export default function Home({ posts, error }) {
   }
 
   return (
-    <div className={postsList}>
-      {posts.map(({ id, title }) => (
-        <Link href={`/posts/${id}`} key={id}>
-          {title}
-        </Link>
+    <>
+      {posts.map((post) => (
+        <PostItem key={post.id} {...post} />
       ))}
-    </div>
+    </>
   );
 }
 
