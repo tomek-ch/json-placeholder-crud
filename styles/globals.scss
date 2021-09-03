@@ -10,6 +10,18 @@ a {
   text-decoration: none;
 }
 
+input,
+textarea {
+  border: none;
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
