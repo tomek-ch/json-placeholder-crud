@@ -1,6 +1,6 @@
 ## {JSON} Placeholder CRUD
 
-**Quick note**: The resources aren't actually updated on the server so you can't see the effects of create, update and delete.
+**Quick note**: The resources aren't actually updated on the server so you can't see the effects of create and update.
 
 ### Installation
 
