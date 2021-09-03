@@ -14,16 +14,22 @@ export default function New() {
 
   return (
     <form className={form}>
-      <input
-        value={title}
-        onChange={({ target: { value } }) => setTitle(value)}
-        className={input}
-      />
-      <TextBox
-        value={body}
-        onChange={({ target: { value } }) => setBody(value)}
-        className={input}
-      />
+      <label>
+        Title:
+        <input
+          value={title}
+          onChange={({ target: { value } }) => setTitle(value)}
+          className={input}
+        />
+      </label>
+      <label>
+        Body:
+        <TextBox
+          value={body}
+          onChange={({ target: { value } }) => setBody(value)}
+          className={input}
+        />
+      </label>
       <button disabled={!title || !body} title={error}>
         Add post
       </button>
