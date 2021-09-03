@@ -1,5 +1,7 @@
 import { useState } from "react";
 import TextBox from "../components/TextBox";
+import { input } from "../styles/Input.module.scss";
+import { form } from "../styles/Form.module.scss";
 
 export default function New() {
   const [title, setTitle] = useState("");
@@ -11,14 +13,16 @@ export default function New() {
     : "";
 
   return (
-    <form>
+    <form className={form}>
       <input
         value={title}
         onChange={({ target: { value } }) => setTitle(value)}
+        className={input}
       />
       <TextBox
         value={body}
         onChange={({ target: { value } }) => setBody(value)}
+        className={input}
       />
       <button disabled={!title || !body} title={error}>
         Add post

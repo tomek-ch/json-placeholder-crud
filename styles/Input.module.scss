@@ -1,0 +1,10 @@
+@import "variables.scss";
+
+.input {
+  display: block;
+  width: 100%;
+  background-color: $foreground;
+  padding: 0.5em;
+  border-radius: $border-radius;
+  margin-bottom: 1em;
+}
