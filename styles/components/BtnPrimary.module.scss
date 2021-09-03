@@ -6,3 +6,7 @@
   background-color: $primary;
   color: white;
 }
+
+.btn:disabled {
+  background-color: $primary-light;
+}
