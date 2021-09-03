@@ -31,7 +31,10 @@ export default function Edit({ post, error }) {
   }
 
   return (
-    <PostForm initialData={post} label="Update post" handleSubmit={update} />
+    <>
+      <PostForm initialData={post} label="Update post" handleSubmit={update} />
+      <div>{updateError}</div>
+    </>
   );
 }
 
