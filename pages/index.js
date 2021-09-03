@@ -9,7 +9,7 @@ export default function Home({ posts, error }) {
   return (
     <div className={postsList}>
       {posts.map(({ id, title }) => (
-        <Link href={`/${id}`} key={id}>
+        <Link href={`/posts/${id}`} key={id}>
           {title}
         </Link>
       ))}
