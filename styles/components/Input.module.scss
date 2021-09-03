@@ -4,7 +4,11 @@
   display: block;
   width: 100%;
   background-color: $foreground;
-  padding: 0.5em;
+  padding: 1em;
   border-radius: $border-radius;
   margin-bottom: 1em;
+}
+
+.input:focus {
+  box-shadow: $outline;
 }
